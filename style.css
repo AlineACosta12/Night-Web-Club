@@ -11,6 +11,35 @@ header {
     padding: 10px 0;
 }
 
+.menu li a:hover {
+    color: rgb(73, 207, 192);
+    transform: scale(1.1);
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* Style the bars */
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(101, 167, 107);
+    margin: 5px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(101, 167, 107);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 .menu li {
     margin-right: 20px;
     list-style: none;
