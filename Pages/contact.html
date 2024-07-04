@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Movie Club</title>
+    <script src="../JavaScript/contact.js" defer></script>
     <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/contact.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
@@ -39,7 +41,28 @@
         </header>
         <div class="content">
 
+            <h2>Leave us a message:</h2>
 
+            <form id="contct-form" method="POST" action="sendmail.php">
+                <div class="form-row form-error" style="display:none;"></div>
+                <div class="form-row">
+                    <label for="contact-form-name">Name: </label>
+                    <input id="contact-form-name" class="form-input" type="text" name="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="contact-form-email">Email: </label>
+                    <input id="contact-form-email" class="form-input" type="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="contact-form-phone">Phone: </label>
+                    <input id="contact-form-phone" class="form-input" type="tel" name="phone">
+                </div>
+                <div class="form-row">
+                    <label for="contact-form-message">Message: </label>
+                    <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
 
             <!-- Footer section -->
             <footer>
@@ -47,7 +70,6 @@
                 <a href="../Pages/contact.html">Contact Us</a>
             </footer>
         </div>
-        <script src="../JavaScript/script.js"></script>
+    </div>
 </body>
-
 </html>
