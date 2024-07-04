@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Movie Club</title>
     <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/forum.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
@@ -14,8 +15,7 @@
         <!-- Header section -->
         <header id="masthead">
             <div id="logo">
-                <a href="../index.html"><img src='../Images/nigth_web.png'
-                    alt="logo club nigth web"></a>
+                <a href="../index.html"><img src='../Images/nigth_web.png' alt="logo club nigth web"></a>
             </div>
             <!-- Navigation menu -->
             <nav class="navbar">
@@ -37,17 +37,47 @@
                 </ul>
             </nav>
         </header>
-        <div class="content">
-
-
-
+        <main id="content">
+            <h1>
+                Discussion Horror Movie Forum!
+            </h1>
+            <div class="forum-post">
+                <h3>
+                    The top 10
+                </h3>
+            </div>
+            <div class="forum-post">
+                <h3>
+                    Night web discussion
+                </h3>
+            </div>
+            <form id="postForm">
+                <div class="form-group">
+                    <label for="topicTitle">
+                        Topic Title:
+                    </label>
+                    <input class="form-control" id="topicTitle" required="" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="postContent">
+                        Post Content:
+                    </label>
+                    <textarea class="form-control" id="postContent" required="" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">
+                    Submit Post
+                </button>
+            </form>
+        </main>
             <!-- Footer section -->
-            <footer>
-                <p>&copy; 2024 Designed by Aline - 3144929 | Eros - 3151957 | Sergio - 3139115</p>
-                <a href="../Pages/contact.html">Contact Us</a>
-            </footer>
-        </div>
-        <script src="../JavaScript/script.js"></script>
+        <footer>
+            <p>&copy; 2024 Designed by Aline - 3144929 | Eros - 3151957 | Sergio - 3139115</p>
+            <a href="../Pages/contact.html">Contact Us</a>
+        </footer>
+    </div>
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/forum.js"></script>
+    </div>
 </body>
 
 </html>
