@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 function addPost() {
-    var postContent = document.getElementById('postContent').value;
+    let postContent = document.getElementById('postContent').value;
     if (postContent.trim() === '') {
         alert('Post content cannot be empty');
         return;
     }
 
-    var post = {
+    let post = {
         content: postContent,
         timestamp: new Date().toLocaleString(),
         likes: 0
@@ -22,13 +22,13 @@ function addPost() {
 }
 
 function savePost(post) {
-    var posts = getPosts();
+    let posts = getPosts();
     posts.push(post);
     localStorage.setItem('posts', JSON.stringify(posts));
 }
 
 function getPosts() {
-    var posts = localStorage.getItem('posts');
+    let posts = localStorage.getItem('posts');
     if (posts) {
         return JSON.parse(posts);
     }
@@ -36,24 +36,24 @@ function getPosts() {
 }
 
 function loadPosts() {
-    var posts = getPosts();
+    let posts = getPosts();
     posts.forEach(post => displayPost(post));
 }
 
 function displayPost(post) {
-    var postsContainer = document.getElementById('posts');
-    var postElement = document.createElement('div');
+    let postsContainer = document.getElementById('posts');
+    let postElement = document.createElement('div');
     postElement.className = 'post';
 
-    var content = document.createElement('div');
+    let content = document.createElement('div');
     content.className = 'content';
     content.textContent = post.content;
 
-    var timestamp = document.createElement('div');
+    let timestamp = document.createElement('div');
     timestamp.className = 'timestamp';
     timestamp.textContent = post.timestamp;
 
-    var likeButton = document.createElement('button');
+    let likeButton = document.createElement('button');
     likeButton.className = 'like-button';
     likeButton.textContent = 'Like';
     likeButton.onclick = function() {
@@ -62,7 +62,7 @@ function displayPost(post) {
         updatePosts();
     };
 
-    var likesCount = document.createElement('span');
+    let likesCount = document.createElement('span');
     likesCount.className = 'likes-count';
     likesCount.textContent = post.likes;
 
@@ -74,12 +74,12 @@ function displayPost(post) {
 }
 
 function updatePosts() {
-    var posts = [];
-    var postElements = document.querySelectorAll('.post');
+    let posts = [];
+    let postElements = document.querySelectorAll('.post');
     postElements.forEach(postElement => {
-        var content = postElement.querySelector('.content').textContent;
-        var timestamp = postElement.querySelector('.timestamp').textContent;
-        var likes = parseInt(postElement.querySelector('.likes-count').textContent);
+        let content = postElement.querySelector('.content').textContent;
+        let timestamp = postElement.querySelector('.timestamp').textContent;
+        let likes = parseInt(postElement.querySelector('.likes-count').textContent);
 
         posts.push({ content, timestamp, likes });
     });
