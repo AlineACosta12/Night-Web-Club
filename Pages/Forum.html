@@ -37,39 +37,19 @@
                 </ul>
             </nav>
         </header>
-        <main id="content">
-            <h1>
-                Discussion Horror Movie Forum!
-            </h1>
-            <div class="forum-post">
-                <h3>
-                    The top 10
-                </h3>
-            </div>
-            <div class="forum-post">
-                <h3>
-                    Night web discussion
-                </h3>
-            </div>
-            <form id="postForm">
-                <div class="form-group">
-                    <label for="topicTitle">
-                        Topic Title:
-                    </label>
-                    <input class="form-control" id="topicTitle" required="" type="text" />
+        <main section = "forum">
+            <div class="container">
+                <h1>Movie Club Forum: Horror Movies</h1>
+                <div class="forum">
+                    <div class="post-form">
+                        <textarea id="postContent" placeholder="Share your thoughts on horror movies..."></textarea>
+                        <button onclick="addPost()">Post</button>
+                    </div>
+                    <div id="posts" class="posts"></div>
                 </div>
-                <div class="form-group">
-                    <label for="postContent">
-                        Post Content:
-                    </label>
-                    <textarea class="form-control" id="postContent" required="" rows="3"></textarea>
-                </div>
-                <button class="btn btn-primary" type="submit">
-                    Submit Post
-                </button>
-            </form>
+            </div>
         </main>
-            <!-- Footer section -->
+        <!-- Footer section -->
         <footer>
             <p>&copy; 2024 Designed by Aline - 3144929 | Eros - 3151957 | Sergio - 3139115</p>
             <a href="../Pages/contact.html">Contact Us</a>
