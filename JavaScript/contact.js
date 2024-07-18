@@ -7,11 +7,13 @@ if ($_SERVER["REUQEST_METHOD"] == "POST") {
         $phone = $_POST["phone"];
         $message = $_POST["message"];
 
+        // Structure of the email, header, subject, body, and to whom (us)
         $to = "nightwebclub@outlook.com";
         $subject = "New Contact Form Submission";
         $body = "Name: {$name}\nEmail: {$email}\nPhone: {$phone}\nMessage: {$message}";
         $headers = "From: {$email}";
 
+        // If message was sent successfully, say so, otherwise notify the user the message failed
         if (mail($to, $subject, $body, $headers)) {
             document.write = "Message sent successfully!";
         } else {
