@@ -3,7 +3,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(214, 214, 214, 0.599);
     border-radius: 10px;
     padding: 30px;
     margin: 20px auto;
@@ -18,7 +18,7 @@
 }
 .team-member:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgb(222, 10, 10);
 }
 .team-member img {
     border-radius: 50%;
@@ -42,7 +42,7 @@
     flex-direction: column;
     background-color: #222;
     box-sizing: border-box;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(214, 214, 214, 0.599);
     border-radius: 10px;
     padding: 30px;
     margin: 20px auto;
@@ -104,7 +104,7 @@
   width: 100%;
   max-width: 400px;
   border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(214, 214, 214, 0.599);
 }
 
 /* Vertical line for the timeline */
@@ -152,3 +152,4 @@
       display: none;
   }
 }
+

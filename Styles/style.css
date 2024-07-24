@@ -1,12 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #222;
+    background-color: #000000;
     color: #fff;
     margin: 0;
     padding: 0;
     justify-content: center;
     align-items: center;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=179382), auto;
     
 }
 
@@ -15,7 +14,8 @@ body {
     max-width: 1500px;
     background: #333;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(214, 214, 214, 0.599);
+   
 }
 
 header {
@@ -30,6 +30,8 @@ header {
 #logo img {
     height: auto;
     text-align: center;
+ 
+    
 }
 
 
@@ -55,7 +57,7 @@ h3 {
 .bar {
     width: 25px;
     height: 3px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(222, 10, 10);;
     margin: 5px 0;
 }
 
@@ -113,6 +115,7 @@ nav ul li a {
 
 main {
     padding: 20px;
+    text-align: justify;
     
 }
 
@@ -122,7 +125,7 @@ main {
     padding: 30px;
     margin: 20px auto;
     max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(214, 214, 214, 0.599);
 }
 .about-section h2 {
     margin-bottom: 20px;
@@ -210,6 +213,11 @@ div.gallery {
     clear: both;
   }
 
+  #myVideo{
+    box-shadow: 0 4px 8px rgb(222, 10, 10);
+
+  }
+
   .button {
     border-radius: 4px;
     background-color: rgb(222, 10, 10);
@@ -252,6 +260,28 @@ div.gallery {
     opacity: 1;
     right: 0;
   }
+
+  #myBottonTop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(222, 10, 10);
+    color: white;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px;
+    font-size: 18px; 
+  }
+  
+  #myBottonTop:hover {
+    background-color: #333;
+    transition: 0.5s;
+  }
+  
 
 footer {
     background-color: #333;
