@@ -4,9 +4,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 // Function to add a new post
 function addPost() {
-    // Get the value of the post content from the input field
     let postContent = document.getElementById('postContent').value;
-    
+
     // Check if the post content is empty, if so alert the user and stop the function
     if (postContent.trim() === '') {
         alert('Post content cannot be empty');
@@ -30,7 +29,6 @@ function addPost() {
 
 // Function to save a post to local storage
 function savePost(post) {
-    // Retrieve the existing posts from local storage
     let posts = getPosts();
     // Add the new post to the posts array
     posts.push(post);
@@ -79,7 +77,7 @@ function displayPost(post) {
     let likeButton = document.createElement('button');
     likeButton.className = 'like-button';
     likeButton.textContent = 'Like';
-    likeButton.onclick = function() {
+    likeButton.onclick = function () {
         post.likes++;
         likesCount.textContent = post.likes;
         updatePosts();
