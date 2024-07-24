@@ -16,3 +16,6 @@ function submitQuiz() {
     
     alert("Your score: " + score + "/3");
 }
+
+// Gallery:
+
