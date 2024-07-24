@@ -19,3 +19,23 @@ function submitQuiz() {
 
 // Gallery:
 
+document.addEventListener("DOMContentLoaded", () => {
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const overlay = document.createElement('div');
+            overlay.classList.add('overlay');
+            document.body.appendChild(overlay);
+
+            const fullImg = document.createElement('img');
+            fullImg.src = item.src;
+            fullImg.classList.add('full-img');
+            overlay.appendChild(fullImg);
+
+            overlay.addEventListener('click', () => {
+                overlay.remove();
+            });
+        });
+    });
+});
