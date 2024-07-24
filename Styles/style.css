@@ -131,6 +131,19 @@ main {
   margin-bottom: 20px;
 }
 
+
+
+.about-news p {
+  
+  padding-bottom: 30px;
+  border-bottom: 10px solid #333;
+}
+.about-news a {
+ color: #da0404;
+ text-decoration: none;
+
+}
+
 .about-content {
   display: flex;
   flex-direction: column;

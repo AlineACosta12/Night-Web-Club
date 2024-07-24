@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Movie Club</title>
     <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/quiz.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
@@ -39,8 +40,116 @@
         </header>
         <div class="content">
 
+        <h1>Horror Movie Quiz</h1>
+    <form id="quizForm">
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>1. Who directed the horror classic "Psycho" (1960)?</legend>
+            <label>
+                <input type="radio" name="question1" value="Alfred Hitchcock">
+                Alfred Hitchcock
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Stanley Kubrick">
+                Stanley Kubrick
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="John Carpenter">
+                John Carpenter
+            </label><br>
+            <label>
+                <input type="radio" name="question1" value="Wes Craven">
+                Wes Craven
+            </label>
+        </fieldset>
+        
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>2. What is the name of the fictional summer camp in the "Friday the 13th" series?</legend>
+            <label>
+                <input type="radio" name="question2" value="Camp Crystal Lake">
+                Camp Crystal Lake
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="Camp Blood">
+                Camp Blood
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="Camp Green Lake">
+                Camp Green Lake
+            </label><br>
+            <label>
+                <input type="radio" name="question2" value="Camp Arawak">
+                Camp Arawak
+            </label>
+        </fieldset>
+        
+        <!-- Question 3 -->
+        <fieldset>
+            <legend>3. What is the name of the demon that possesses the main character in "The Exorcist"?</legend>
+            <label>
+                <input type="radio" name="question3" value="Pazuzu">
+                Pazuzu
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="Zozo">
+                Zozo
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="Azazel">
+                Azazel
+            </label><br>
+            <label>
+                <input type="radio" name="question3" value="Beelzebub">
+                Beelzebub
+            </label>
+        </fieldset>
+        
+        <br>
+        <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    </form>
 
+    <!-- Gallery -->
+    <h2>Club Members Cosplays!</h2>
 
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="../Images/images-quiz/Aline-bellatrix.jpeg" alt="Aline dressed as Bellatrix Lestrange from Harry Potter">
+        </div>
+        <div class="gallery-item">
+            <img src="../Images/images-quiz/aline-catwoman.jpeg" alt="Aline dressed as catwoman">
+        </div>
+        <div class="gallery-item">
+            <img src="../Images/images-quiz/aline-sergio-catwoman_zombie.jpeg" alt="Aline as catwoman stepping on Sergio, who is dressed as a zombie">
+        </div>
+        <div class="gallery-item">
+            <img src="../Images/images-quiz/aline-sergio_evilpeterpan.jpeg" alt="Sergio as Peter Pan and Aline as Wendy, in a twisted version of the original story">
+        </div>
+        <div class="gallery-item">
+            <img src="../Images/images-quiz/group-fantasy.jpeg" alt="group in costume">
+        </div>
+        <div class="gallery-item">
+            <img src="../Images/images-quiz/halloween-group.jpeg" alt="group in costume for halloween">
+        </div>
+        <div class="gallery-item">
+            <img src="../Images/images-quiz/saw.jpeg" alt="woman dressed as Jigsaw">
+        </div>
+        <div class="gallery-item">
+            <img src="../Images/images-quiz/sergio-zombie.jpeg" alt="Sergio dressed as a zombie">
+        </div>
+        <div class="gallery-item">
+            <img src="../Images/images-quiz/zombie/freddie_krueger.jpeg" alt="Sergio as a zombie, man as Freddie Krueger and frightened woman in the middle">
+        </div>
+        <div class="gallery-item">
+            <img src="../Images/images-quiz/sergio-frankenstein.jpeg" alt="Sergio dressed as the Frankenstein monster">
+        </div>
+        <div class="gallery-item">
+            <img src="../Images/images-quiz/group-costume-party.jpeg" alt="group costume party">
+        </div>
+        <div class="gallery-item">
+            <img src="../Images/images-quiz/sergio-mask.jpeg" alt="sergio as the mask">
+        </div>
+    </div>
             <!-- Footer section -->
             <footer>
                 <p>&copy; 2024 Designed by Aline - 3144929 | Eros - 3151957 | Sergio - 3139115</p>
@@ -48,6 +157,7 @@
             </footer>
         </div>
         <script src="../JavaScript/script.js"></script>
+        <script src="../JavaScript/quiz.js"></script>
+</div>
 </body>
-
 </html>
