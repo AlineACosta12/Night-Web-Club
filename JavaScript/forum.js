@@ -30,17 +30,13 @@ function addPost() {
 // Function to save a post to local storage
 function savePost(post) {
     let posts = getPosts();
-    // Add the new post to the posts array
     posts.push(post);
-    // Save the updated posts array back to local storage
     localStorage.setItem('posts', JSON.stringify(posts));
 }
 
 // Function to retrieve posts from local storage
 function getPosts() {
-    // Get the posts data from local storage
     let posts = localStorage.getItem('posts');
-    // Parse and return the posts if they exist, otherwise return an empty array
     if (posts) {
         return JSON.parse(posts);
     }
@@ -49,17 +45,13 @@ function getPosts() {
 
 // Function to load all posts from local storage and display them on the page
 function loadPosts() {
-    // Get the posts from local storage
     let posts = getPosts();
-    // Display each post on the page
     posts.forEach(post => displayPost(post));
 }
 
 // Function to create and display a post element on the page
 function displayPost(post) {
-    // Get the container where posts will be displayed
     let postsContainer = document.getElementById('posts');
-    // Create a new div element for the post
     let postElement = document.createElement('div');
     postElement.className = 'post';
 
@@ -93,17 +85,13 @@ function displayPost(post) {
     postElement.appendChild(timestamp);
     postElement.appendChild(likeButton);
     postElement.appendChild(likesCount);
-    // Append the post element to the posts container
     postsContainer.appendChild(postElement);
 }
 
 // Function to update the posts in local storage based on the current state of the displayed posts
 function updatePosts() {
-    // Create an array to hold the updated posts
     let posts = [];
-    // Get all post elements currently displayed
     let postElements = document.querySelectorAll('.post');
-    // Extract data from each post element and push it to the posts array
     postElements.forEach(postElement => {
         let content = postElement.querySelector('.content').textContent;
         let timestamp = postElement.querySelector('.timestamp').textContent;
