@@ -132,13 +132,6 @@ main {
 }
 
 
-
-.about-news p {
-  
-  padding-bottom: 30px;
-  border-bottom: 10px solid #333;
-}
-
 .about-content {
   display: flex;
   flex-direction: column;
