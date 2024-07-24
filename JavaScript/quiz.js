@@ -1,3 +1,5 @@
+// Quiz:
+
 function submitQuiz() {
     // Get the quiz form and data
     let quizForm = document.getElementById('quizForm');
@@ -21,6 +23,8 @@ function submitQuiz() {
     // Display the score to the user
     alert("Your score: " + score + "/3");
 }
+
+// --END OF THE QUIZ--
 
 // Gallery:
 
