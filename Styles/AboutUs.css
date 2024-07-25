@@ -26,6 +26,7 @@
     height: 150px;
     object-fit: cover;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgb(222, 10, 10);
 }
 .team-member h3 {
     margin: 10px 0;
@@ -104,7 +105,7 @@
   width: 100%;
   max-width: 400px;
   border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(214, 214, 214, 0.599);
+  box-shadow: 0 4px 8px rgb(222, 10, 10);
 }
 
 /* Vertical line for the timeline */
