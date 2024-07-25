@@ -9,6 +9,7 @@ main {
 
 main img {
     width: 100%;
+    box-shadow: 0 4px 8px rgb(222, 10, 10);
 }
 
 .forum {

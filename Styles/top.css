@@ -47,7 +47,7 @@
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: #da0404;
+    background-color:rgb(222, 10, 10);
     border-radius: 50%;
     text-decoration: none;
   }
@@ -61,7 +61,12 @@
   }
 
   .about-news a {
-    color: #da0404;
+    color: rgb(222, 10, 10);
     text-decoration: none;
    
+   }
+
+   .about-section img {
+    width: 100%;
+    box-shadow: 0 4px 8px rgb(222, 10, 10);
    }

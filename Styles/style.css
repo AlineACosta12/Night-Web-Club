@@ -170,6 +170,7 @@ main {
 
 .vision-mission div:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 8px rgb(222, 10, 10);
 
 }
 
