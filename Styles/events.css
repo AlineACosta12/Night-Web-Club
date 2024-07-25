@@ -1,18 +1,18 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+      box-sizing: border-box;
 }
 
 
-section#events {
+#events {
     max-width: 800px;
     margin: 0 auto;
 }
 
 h2 {
     margin-bottom: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
     font-size: 2em;
     text-align: center;
 }
@@ -27,10 +27,6 @@ h2 {
     box-shadow: 0 4px 8px rgba(214, 214, 214, 0.599);
 }
 
-.event h3 {
-    margin-bottom: 10px;
- 
-}
 
 .date {
     font-weight: bold;
@@ -53,23 +49,17 @@ h2 {
 .image-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+  
 }
 
 #map img {
     max-width: 100%;
-    height: auto;
+
 }
 
 #participate {
     text-align: center;
 }
 
-#participate a{
-    text-decoration: none;
-    color: white;
-}
 
-#participate a:hover{
-    color: rgb(222, 10, 10);;
-}
+
