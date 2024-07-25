@@ -39,82 +39,70 @@
                 </ul>
             </nav>
         </header>
-        <div class="content">
-            <main>
-                <h2>Leave us a message:</h2>
-                <div class="row">
-                    <div class="col align-self-center">
-                        <!-- contact form -->
-                        <form id="myForm">
-                            <!-- name -->
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="name" name="name" class="form-control" id="name"
-                                    placeholder="enter your name" />
-                            </div>
 
-                            <!-- email -->
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" name="email" class="form-control" id="email"
-                                    placeholder="enter your email" />
-                            </div>
+        <!-- Flex container for the content and contact-devs section -->
+        <div class="flex-container">
+            <div class="content">
+                <main>
+                    <h2>Leave us a message:</h2>
+                    <div class="row">
+                        <div class="col align-self-center">
+                            <!-- contact form -->
+                            <form id="myForm">
+                                <!-- name -->
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="name" name="name" class="form-control" id="name" placeholder="enter your name" />
+                                </div>
 
-                            <!-- subject -->
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" name="subject" class="form-control" id="subject"
-                                    placeholder="enter email subject" />
-                            </div>
+                                <!-- email -->
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="enter your email" />
+                                </div>
 
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="5"></textarea>
-                            </div>
+                                <!-- subject -->
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" name="subject" class="form-control" id="subject" placeholder="enter email subject" />
+                                </div>
 
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary custom-btn">Submit</button>
+                            </form>
+                        </div>
                     </div>
+                </main>
+            </div>
+           
+            <section id="contact-devs">
+                <div class="card">
+                    <h3>Aline Andrade</h3>
+                    <p class="title">Founding Member</p>
+                    <p>Griffith College Cork</p>
+                    <p>aline.andradecosta@student.griffith.ie</p>
+                    <p><a href="mailto:aline.andradecosta@student.griffith.ie">Contact</a></p>
                 </div>
-            </main>
+                <div class="card">
+                    <h3>Eros Coelho</h3>
+                    <p class="title">Founding Member</p>
+                    <p>Griffith College Cork</p>
+                    <p>eros.limacoelho@student.griffith.ie</p>
+                    <p><a href="mailto:eros.limacoelho@student.griffith.ie">Contact</a></p>
+                </div>
+                <div class="card">
+                    <h3>Sergio Alves</h3>
+                    <p class="title">Founding Member</p>
+                    <p>Griffith College Cork</p>
+                    <p>sergio.alvesdasilva@student.griffith.ie</p>
+                    <p><a href="mailto:sergio.alvesdasilva@student.griffith.ie">Contact</a></p>
+                </div>
+            </section>
         </div>
-       
-        <!-- bootstrap js -->
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-            integrity="sha384-ZvpUoO/+P1c0e+s0B1lb5o86IBQzMwpLPZ8aIk5zn0QFtrrQXNTPd/Gr5e+eB1Rk"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-            crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-        <script type="text/javascript">
-            (function () {
-                emailjs.init("QFpg2OfJLhSLoNGc0");
-            })();
-        </script>
-
-        <script>
-            // listen to the form submission
-            document.getElementById("myForm").addEventListener("submit", function (event) {
-                event.preventDefault();
-
-                const serviceID = "service_3zkhhbh";
-                const templateID = "template_pi9mzlu";
-
-                // send the email here
-                emailjs.sendForm(serviceID, templateID, this).then(
-                    (response) => {
-                        console.log("SUCCESS!", response.status, response.text);
-                        alert("SUCCESS!");
-                    },
-                    (error) => {
-                        console.log("FAILED...", error);
-                        alert("FAILED...", error);
-                    }
-                );
-            });
-        </script>
 
         <!-- Footer section -->
         <footer>
@@ -122,6 +110,44 @@
             <a href="../Pages/contact.html">Contact Us</a>
         </footer>
     </div>
+    
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-ZvpUoO/+P1c0e+s0B1lb5o86IBQzMwpLPZ8aIk5zn0QFtrrQXNTPd/Gr5e+eB1Rk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("QFpg2OfJLhSLoNGc0");
+        })();
+    </script>
+
+    <script>
+        // listen to the form submission
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const serviceID = "service_3zkhhbh";
+            const templateID = "template_pi9mzlu";
+
+            // send the email here
+            emailjs.sendForm(serviceID, templateID, this).then(
+                (response) => {
+                    console.log("SUCCESS!", response.status, response.text);
+                    alert("SUCCESS!");
+                },
+                (error) => {
+                    console.log("FAILED...", error);
+                    alert("FAILED...", error);
+                }
+            );
+        });
+    </script>
+
     <script src="../JavaScript/script.js"></script>
     <script src="../JavaScript/contact.js"></script>
 </body>
