@@ -6,8 +6,8 @@ body {
   padding: 0;
   justify-content: center;
   align-items: center;
-
-}
+  background-image: url(../images/Morcego\ 8.gif);
+  }
 
 .container {
   width: 100%;
