@@ -45,3 +45,31 @@ h2 {
 .description {
     margin-top: 10px;
 }
+
+#map {
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#map img {
+    max-width: 100%;
+    height: auto;
+}
+
+#participate {
+    text-align: center;
+}
+
+#participate a{
+    text-decoration: none;
+    color: white;
+}
+
+#participate a:hover{
+    color: rgb(222, 10, 10);;
+}
